@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Color Gradient Field</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div id="container"></div>
+  <div>
+    <label for="color">Select Color:</label>
+    <input type="color" id="color" value="#0000ff">
+    <label for="intensity">Intensity (0-9):</label>
+    <input type="number" id="intensity" min="0" max="9" value="9">
+    <label for="x">X:</label>
+    <input type="number" id="x" min="0" max="99" value="0">
+    <label for="y">Y:</label>
+    <input type="number" id="y" min="0" max="99" value="0">
+    <button id="applyGradient">Submit</button>
+  </div>
+  <script src="scripts/functions.js"></script>
+  <script src="scripts/grid.js"></script>
+  <script src="scripts/gradient.js"></script>
+  <script src="scripts/oneCellOrganism.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
