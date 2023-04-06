@@ -1,0 +1,15 @@
+body {
+  font-family: Arial, sans-serif;
+}
+
+#container {
+  display: grid;
+  gap: 1px;
+}
+
+.cell {
+  width: 10px;
+  height: 10px;
+  background-color: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
