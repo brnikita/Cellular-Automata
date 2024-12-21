@@ -60,7 +60,7 @@ class Grid {
           this.intensityMap[numberOfTheCell] = {
             color: cell.color,
             organism: true,
-            intensity: currentIntensityInstance.intensity
+            intensity: currentIntensityInstance?.intensity || 0
           };
           continue;
         }

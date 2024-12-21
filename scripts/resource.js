@@ -1,4 +1,4 @@
-class Gradient {
+class Resource {
   constructor(initialColor, initialIntensity, initialXCoordinate, initialYCoordinate, container, gradientControls, gridInstance) {
     this.initialColor = initialColor || "#0000ff";
     this.initialIntensity = initialIntensity || 30;

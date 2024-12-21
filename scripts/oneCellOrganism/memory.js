@@ -8,7 +8,10 @@ class Memory {
       this.numberOfColumns = numberofColumns;
   }
 
-  //dataMap -> [{x:, y:, intensity:}]
+  /**
+   * Sets the dataMap.
+   * @param {Array} dataMap - The dataMap to set.
+   */
   setDataMap (dataMap) {
     if (!dataMap || !dataMap.length){
       return;
@@ -24,6 +27,9 @@ class Memory {
     this.setDecisionMap ();
   }
 
+  /**
+   * Sets the keyDataMap.
+   */
   setKeyDataMap (){
     let keyDataMap = {};
 
@@ -34,7 +40,9 @@ class Memory {
     this.keyDataMap = keyDataMap;
   }
 
-  //Makes a desicion based on the avarage intensity of around cells including current cell.
+  /**
+   * Makes a desicion based on the avarage intensity of around cells including current cell.
+   */
   setDecisionMap (){
     const dataMap = this.getKeyDataMap();
     console.log ("dataMap", dataMap);
@@ -76,18 +84,34 @@ class Memory {
       this.decisionMap = decisionMap;
     }
 
+  /**
+   * Gets the dataMap.
+   * @returns {Array} The dataMap.
+   */
   getDataMap (){
     return this.dataMap;
   }
 
+  /**
+   * Gets the keyDataMap.
+   * @returns {Object} The keyDataMap.
+   */
   getKeyDataMap (){
     return this.keyDataMap;
   }
 
+  /**
+   * Gets the decisionMap.
+   * @returns {Array} The decisionMap.
+   */
   getDecisionMap (){
     return this.decisionMap;
   }
 
+  /**
+   * Gets the keyDecisionMap.
+   * @returns {Object} The keyDecisionMap.
+   */
   getKeyDecisionMap (){
     return this.keyDecisionMap;
   }
